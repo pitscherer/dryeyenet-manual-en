@@ -50,3 +50,23 @@ html:not([data-theme="dark"]) .footer .footer__title {
 [data-theme="dark"] .footer {
   background-color: var(--ifm-navbar-background-color) !important;
 }
+
+/* When the zoom dialog is opening / closed */
+[data-rmiz-modal-overlay="hidden"] {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* When the zoom dialog is open (VISIBLE) */
+[data-rmiz-modal-overlay="visible"] {
+  background-color: rgba(0, 0, 0, 0.75) !important; /* <- adjust darkness */
+}
+
+img.doc-image {
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+}
+
+/* Category index card titles */
+a.card h2 {
+  color: #1a62b0;
+}
