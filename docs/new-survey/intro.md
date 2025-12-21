@@ -10,3 +10,21 @@ The **New Base Survey Workflow** is used to document a baseline exam for a patie
 :::tip
 If you are interrupted frequently, complete one step at a time and click **Next** to ensure your progress is recorded.
 :::
+
+- **Anamnesis**
+
+  - General risk factors
+  - Disorder risk factors
+  - Eye history
+  - Eye drops/ointment
+  - Eye medication
+  - Regular general medication
+  - General medication
+  - Nutrient / Gene related
+  - Demographic details
+
+- **OSDI**
+
+- **Visual Acuity & Remarks**
+
+- **Import Document**

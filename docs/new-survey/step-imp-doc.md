@@ -1,8 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
-# Step 4: Add files
+# Step 5: Add files
 
 Attach supporting files such as reports, PDFs, images, or device exports.
 
