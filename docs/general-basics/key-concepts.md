@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 1.1 Key Concepts
+# Key Concepts
 
 DryEyeNet organizes work into guided flows we call **workflows**:
 
