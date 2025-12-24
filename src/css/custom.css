@@ -29,6 +29,14 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+nav.navbar a {
+  color: #5f6368;
+}
+
+b.navbar__title {
+  font-weight: 600 !important;
+}
+
 h1 {
   font-size: 2.35rem !important;
 }
@@ -77,4 +85,11 @@ img.doc-image {
 /* Category index card titles */
 a.card h2 {
   color: #1a62b0;
+}
+
+@media (max-width: 900px) {
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
 }

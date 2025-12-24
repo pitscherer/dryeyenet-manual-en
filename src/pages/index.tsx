@@ -7,34 +7,59 @@ import Heading from "@theme/Heading";
 import styles from "./index.module.css";
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <a
-          className={clsx(
-            "button button--secondary button--lg",
-            styles.docsButton
-          )}
-          href="/docs/intro"
-          style={{ marginTop: "2rem" }}
-        >
-          Go to Documentation
-        </a>
+    <div className={styles.hero_syme} data-theme="dark">
+      <div className={styles.heroInner_VWeJ}>
+        <div className={styles.heroContentRow}>
+          <div className={styles.heroTextCol}>
+            <h1 className={styles.heroProjectTagline_EkV5}>
+              <span className={styles.heroTitleTextHtml_zYwv}>
+                Build <b>optimized</b> websites <b>quickly</b>, focus on your{" "}
+                <b>content</b>
+              </span>
+            </h1>
+            <div className={styles.indexCtas_hUA_}>
+              <a className="button button--primary" href="/docs">
+                Get Started
+              </a>
+              <a
+                href="https://docusaurus.new"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button button--info"
+              >
+                Try a Demo
+              </a>
+              <span className={styles.indexCtasGitHubButtonWrapper_AOht}>
+                <iframe
+                  className={styles.indexCtasGitHubButton_sMIS}
+                  src="https://ghbtns.com/github-btn.html?user=facebook&amp;repo=docusaurus&amp;type=star&amp;count=true&amp;size=large"
+                  width="160"
+                  height="30"
+                  title="GitHub Stars"
+                ></iframe>
+              </span>
+            </div>
+          </div>
+          <div className={styles.heroImageCol}>
+            <img
+              alt="Docusaurus with Keytar"
+              className={styles.heroLogo_jM6J}
+              width="500"
+              src="/img/homeImage.png"
+            />
+          </div>
+        </div>
       </div>
-    </header>
+    </div>
   );
 }
 
 export default function Home(): ReactNode {
   return (
     <Layout
-      title="DryEyeNet Manual"
-      description="Official documentation and user manual for DryEyeNet"
+      title="DryEyeNet Documentation"
+      description="Official documentation for DryEyeNet"
     >
       <HomepageHeader />
       <main>

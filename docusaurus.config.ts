@@ -5,7 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "DryEyeNet Manual",
+  title: "DryEyeNet Documentation",
   tagline: "Documentation and User Manual for DryEyeNet",
   favicon: "img/favicon.ico",
 
@@ -75,7 +75,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: "DryEyeNet",
+      /*title: "DryEyeNet",*/
       logo: {
         alt: "DryEyeNet Logo",
         src: "img/logo.svg",
@@ -85,10 +85,10 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Documentation",
         },
-        /*        { to: "/blog", label: "Blog", position: "left" },
-        {
+        { to: "/stfd", label: "STFD", position: "left" },
+        /*{
           href: "https://github.com/facebook/docusaurus",
           label: "GitHub",
           position: "right",
@@ -102,7 +102,7 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Tutorial",
+              label: "Documentation",
               to: "/docs/intro",
             },
           ],
