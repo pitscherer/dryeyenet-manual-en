@@ -93,3 +93,83 @@ a.card h2 {
     padding-right: 1rem !important;
   }
 }
+
+h2.versionsTitle {
+  text-align: center;
+  font-size: 2.2rem !important;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+span.brand {
+  color: #1a62b0;
+}
+
+a.button.button--primary {
+  border-radius: 3px;
+  background-color: #1a62b0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hero_syme_doc6 h1 {
+  font-size: 3rem !important;
+  font-weight: 300 !important;
+  padding-bottom: 1rem;
+}
+.hero_syme_doc6 h1 b {
+  color: #1a62b0;
+}
+
+span.explaText {
+  font-size: 1.15rem;
+}
+
+span.addedText {
+  display: block;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+span.learnMore {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1a62b0;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.featureBlock_QltR {
+  background: #fdfdfd;
+  border-color: #f2f2f2;
+}
+.featureBlock_QltR b {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.featureBlock_QltR:nth-child(1) b {
+  /*border-color: #cfe4dc;
+  background-color: #fcfdfe;*/
+  color: #02525b;
+}
+
+.featureBlock_QltR:nth-child(2) b {
+  /*background-color: #f8fbff;
+  border-color: #c3d9f0;*/
+
+  color: #000f92;
+}
+
+.featureBlock_QltR:nth-child(3)b {
+  /*background-color: #fffdf8;
+  border-color: #f2cf9a;*/
+  color: #f5a100;
+}
+
+.featureBlock_QltR:nth-child(4) b {
+  /*background-color: #fffafa;
+  border-color: #f2b3b3;*/
+  color: #e70101;
+}

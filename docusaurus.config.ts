@@ -88,18 +88,29 @@ const config: Config = {
           label: "Documentation",
         },
         { to: "/stfd", label: "STFD", position: "left" },
-        /*{
-          href: "https://github.com/facebook/docusaurus",
-          label: "GitHub",
-          position: "right",
-        },*/
+        {
+          label: "Versions", // Dropdown label
+          position: "left",
+          items: [
+            { label: "OPTO", to: "/opto" },
+            {
+              label: "READ",
+              href: "/read",
+            },
+            {
+              label: "CARE",
+              href: "/care",
+            },
+            { label: "SAFE", href: "/safe" },
+          ],
+        },
       ],
     },
     footer: {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "DOCUMENTATION",
           items: [
             {
               label: "Documentation",
@@ -108,32 +119,15 @@ const config: Config = {
           ],
         },
         {
-          title: "Community",
+          title: "CONTACT/SUPPORT",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "support@smartdryeyes.com",
+              href: "mailto:support@smartdryeyes.com",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "X",
-              href: "https://x.com/docusaurus",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              label: "Contact",
+              href: "https://www.smartdryeyes.com/contact-1/",
             },
           ],
         },

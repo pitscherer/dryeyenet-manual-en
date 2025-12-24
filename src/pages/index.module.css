@@ -253,7 +253,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 0.2rem;
   width: 100%;
 }
 
@@ -303,7 +303,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   margin-top: 1.5rem;
 }
@@ -341,7 +341,7 @@
   .heroContentRow {
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
   }
   .heroTextCol {
     text-align: center;
@@ -386,5 +386,75 @@
   100% {
     opacity: 1;
     transform: scale(1) rotate(0);
+  }
+}
+
+/*now the grid*/
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 2.5rem 0;
+}
+.featureGrid p {
+  font-size: 18px;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.featureGrid b {
+  text-transform: uppercase;
+  align-self: flex-start;
+  color: #414141;
+}
+
+.featureBlock {
+  border-radius: 3px;
+  padding: 1.5rem 1rem;
+  border: 1px solid #dadce0;
+  color: black;
+  /*  background: #f7f8fa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);*/
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featureBlock:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.featureTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.featureIcon {
+  width: 64px;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .featureGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .featureGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .featureBlock {
+    padding: 1.2rem 0.5rem;
   }
 }

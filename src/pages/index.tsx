@@ -12,34 +12,29 @@ function HomepageHeader() {
       <div className={styles.heroInner_VWeJ}>
         <div className={styles.heroContentRow}>
           <div className={styles.heroTextCol}>
-            <h1 className={styles.heroProjectTagline_EkV5}>
-              <span className={styles.heroTitleTextHtml_zYwv}>
-                Build <b>optimized</b> websites <b>quickly</b>, focus on your{" "}
-                <b>content</b>
-              </span>
+            <h1>
+              DryEyeNet follows the <b>STFD</b> Principle
             </h1>
+            <span className="explaText">
+              DryEyeNet is built on three core principles: Ease of Use, Data
+              Entry Reliability, and Speed.
+              <br />
+              The Single Flow Task Design (SFTD) places each task at the center
+              of the experience, ensuring a reliable, fast, and intuitive
+              workflow. Available tasks vary depending on the software version
+              and the user role.
+            </span>
+
             <div className={styles.indexCtas_hUA_}>
               <a className="button button--primary" href="/docs">
-                Get Started
+                Begin with the Documentation
               </a>
-              <a
-                href="https://docusaurus.new"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="button button--info"
-              >
-                Try a Demo
-              </a>
-              <span className={styles.indexCtasGitHubButtonWrapper_AOht}>
-                <iframe
-                  className={styles.indexCtasGitHubButton_sMIS}
-                  src="https://ghbtns.com/github-btn.html?user=facebook&amp;repo=docusaurus&amp;type=star&amp;count=true&amp;size=large"
-                  width="160"
-                  height="30"
-                  title="GitHub Stars"
-                ></iframe>
-              </span>
             </div>
+
+            <span className="addedText">
+              <b>Need direct help?</b> Reach us at support@dryeyenet.com or +34
+              630 90 66 82
+            </span>
           </div>
           <div className={styles.heroImageCol}>
             <img
@@ -65,26 +60,56 @@ export default function Home(): ReactNode {
       <main>
         <section
           className={clsx("container", styles.section)}
-          style={{ padding: "3rem 0" }}
+          style={{ padding: "1.5rem 0" }}
         >
-          <Heading as="h2">Welcome to the DryEyeNet Manual</Heading>
-          <p>
-            This manual provides comprehensive guidance for using the DryEyeNet
-            platform, including staff and patient workflows, system features,
-            and best practices for daily operations.
-          </p>
-          <p>
-            Use the navigation menu on the left to access detailed sections on
-            setup, workflows, and troubleshooting.
-          </p>
-          <Heading as="h3">Support</Heading>
-          <p>
-            For questions or technical support, please contact: <br />
-            <strong>Email:</strong>{" "}
-            <a href="mailto:support@smartdryeyes.com">
-              support@smartdryeyes.com
-            </a>
-          </p>
+          <Heading as="h2" className="versionsTitle">
+            Default <span className="brand">DryEyeNet</span> Versions Available
+          </Heading>
+          <div className={styles.featureGrid}>
+            {[
+              {
+                icon: "/img/versions/opto.png",
+                title: "Opto",
+                text: "Version for the Pre-treatment center.",
+                href: "/opto",
+              },
+              {
+                icon: "/img/versions/read.png",
+                title: "Read",
+                text: "Version for the Reading Center.",
+                href: "/read",
+              },
+              {
+                icon: "/img/versions/care.png",
+                title: "Care",
+                text: "Version for the Treatment Provider.",
+                href: "/care",
+              },
+              {
+                icon: "/img/versions/safe.png",
+                title: "Safe",
+                text: "Patient Portal.",
+                href: "/safe",
+              },
+            ].map((block, idx) => (
+              <a key={idx} className={styles.featureBlock} href={block.href}>
+                <div className={styles.featureTitle}>
+                  <img
+                    src={block.icon}
+                    alt=""
+                    className={styles.featureIcon}
+                    width={64}
+                  />
+                </div>
+                <b>{block.title}:</b>
+                <p>
+                  {"  "}
+                  {block.text}
+                </p>
+                <span className="learnMore">Go to Docs</span>
+              </a>
+            ))}
+          </div>
         </section>
       </main>
     </Layout>
