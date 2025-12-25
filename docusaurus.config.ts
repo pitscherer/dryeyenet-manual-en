@@ -89,19 +89,19 @@ const config: Config = {
         },
         { to: "/stfd", label: "STFD", position: "left" },
         {
-          label: "Versions", // Dropdown label
+          label: "Platform", // Dropdown label
           position: "left",
           items: [
-            { label: "OPTO", to: "/opto" },
+            { label: "OPTO", to: "/docs/platform/opto" },
             {
               label: "READ",
-              href: "/read",
+              href: "/docs/platform/read",
             },
             {
               label: "CARE",
-              href: "/care",
+              href: "/docs/platform/care",
             },
-            { label: "SAFE", href: "/safe" },
+            { label: "SAFE", href: "/docs/platform/safe" },
           ],
         },
       ],

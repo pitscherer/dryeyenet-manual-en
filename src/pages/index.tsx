@@ -63,7 +63,7 @@ export default function Home(): ReactNode {
           style={{ padding: "1.5rem 0" }}
         >
           <Heading as="h2" className="versionsTitle">
-            Default <span className="brand">DryEyeNet</span> Versions Available
+            The <span className="brand">DryEyeNet</span> Platform
           </Heading>
           <div className={styles.featureGrid}>
             {[
@@ -71,25 +71,25 @@ export default function Home(): ReactNode {
                 icon: "/img/versions/opto.png",
                 title: "Opto",
                 text: "Version for the Pre-treatment center.",
-                href: "/opto",
+                href: "/docs/platform/opto",
               },
               {
                 icon: "/img/versions/read.png",
                 title: "Read",
                 text: "Version for the Reading Center.",
-                href: "/read",
+                href: "/docs/platform/read",
               },
               {
                 icon: "/img/versions/care.png",
                 title: "Care",
                 text: "Version for the Treatment Provider.",
-                href: "/care",
+                href: "/docs/platform/care",
               },
               {
                 icon: "/img/versions/safe.png",
                 title: "Safe",
                 text: "Patient Portal.",
-                href: "/safe",
+                href: "/docs/platform/safe",
               },
             ].map((block, idx) => (
               <a key={idx} className={styles.featureBlock} href={block.href}>
