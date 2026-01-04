@@ -3,26 +3,40 @@
         "rewrite": "/index.html"
     },
   "trailingSlash": "auto",
-  "auth": {
-    "identityProviders": {
-      "customOpenIdConnectProviders": {
-        "aadb2c": {
-          "registration": {
-            "clientIdSettingName": "AADB2C_PROVIDER_CLIENT_ID",
-            "clientCredential": {
-              "clientSecretSettingName": "AADB2C_PROVIDER_CLIENT_SECRET"
+  "routes": [
+      {
+        "route": "/login",
+        "rewrite": "/.auth/login/aad"
+      },
+      {
+        "route": "/logout",
+        "redirect": "/.auth/logout"
+      },
+      {
+        "route": "/*",
+        "allowedRoles": ["authenticated"]
+      }
+    ],
+    "auth": {
+      "identityProviders": {
+        "customOpenIdConnectProviders": {
+          "aadb2c": {
+            "registration": {
+              "clientIdSettingName": "AADB2C_PROVIDER_CLIENT_ID",
+              "clientCredential": {
+                "clientSecretSettingName": "AADB2C_PROVIDER_CLIENT_SECRET"
+              },
+              "openIdConnectConfiguration": {
+                "wellKnownOpenIdConfiguration": "https://smartdryeyes.b2clogin.com/smartdryeyes.onmicrosoft.com/B2C_1_SmartDryEyes_SignIn/v2.0/.well-known/openid-configuration"
+              }
             },
-            "openIdConnectConfiguration": {
-              "wellKnownOpenIdConfiguration": "https://smartdryeyes.b2clogin.com/smartdryeyes.onmicrosoft.com/B2C_1_SmartDryEyes_SignIn/v2.0/.well-known/openid-configuration"
+            "login": {
+              "nameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier",
+              "scopes": [],
+              "loginParameterNames": []
             }
-          },
-          "login": {
-            "nameClaimType": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier",
-            "scopes": [],
-            "loginParameterNames": []
           }
         }
       }
-    }
   }  
 }
